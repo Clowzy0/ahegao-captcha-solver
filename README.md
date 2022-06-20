@@ -1,7 +1,7 @@
 # ahegao-captcha-solver
 
 This is a project which is using machine learning to solve Brutalgamerlp's(github.com/Brutalgamerlp) ahegao-captcha(captcha.ahegao.li).
-The model was created teachablemachine(teachablemachine.withgoogle.com) and trained with automatically scraped images from the actual captcha.
+The model was created with teachablemachine(teachablemachine.withgoogle.com) and trained with automatically scraped images from the actual captcha.
 
 It might happen that Brutalgamerlp changes the captcha somehow to make it harder to solve automatically but right now(20.6.2022) it had solved 10/10 runs perfectly.
 
