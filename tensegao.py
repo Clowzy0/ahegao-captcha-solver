@@ -6,7 +6,7 @@ import cv2
 
 np.set_printoptions(suppress=False)
 
-model = tensorflow.keras.models.load_model('mod.h5')           #select the trained model
+model = tensorflow.keras.models.load_model('face_model.h5')           #select the trained model
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 result = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]         #create a list where the results will be stored

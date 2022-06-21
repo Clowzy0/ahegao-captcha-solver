@@ -181,3 +181,25 @@ os.system("del face_5.png")
 os.system("del face_6.png")
 os.system("del face_7.png")
 os.system("del face_8.png")
+os.system("del result.txt")
+
+
+element[1].screenshot('validity_box.png')
+
+uncroped_validity_box = Image.open('./validity_box.png')
+xy_crop_values_uncroped_validity_box = (17, 28, 38, 49)
+validity_box = uncroped_validity_box.crop(xy_crop_values_uncroped_validity_box)
+validity_box.save('validity_box_for_check.png')
+os.system("del validity_box.png")
+os.system("python cortens.py")
+
+txt_file = open("result.txt", "r")
+validity_result = txt_file.read()
+txt_file.close()
+
+if validity_result == "0":
+    print("result_incorrect")
+if validity_result == "1":
+    print("result_correct")
+
+driver.quit()
