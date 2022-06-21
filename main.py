@@ -171,3 +171,13 @@ time.sleep(0.1)                                                   #avoid errors
 action.move_to_element_with_offset(element[0], 205, 340)          #move the "cursor" above the box...
 action.click()                                                    #and
 action.perform()                                                  #click it
+
+os.system("del face_0.png")                                       #remove everything that isn't needed anymore
+os.system("del face_1.png")
+os.system("del face_2.png")
+os.system("del face_3.png")
+os.system("del face_4.png")
+os.system("del face_5.png")
+os.system("del face_6.png")
+os.system("del face_7.png")
+os.system("del face_8.png")
